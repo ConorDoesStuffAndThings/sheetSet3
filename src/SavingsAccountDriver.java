@@ -15,7 +15,7 @@ public class SavingsAccountDriver {
 
         for(int i=0; i <=3; i++){
             accountArray[i]=user;
-            
+
         }
 
         JOptionPane.showMessageDialog(null, user);

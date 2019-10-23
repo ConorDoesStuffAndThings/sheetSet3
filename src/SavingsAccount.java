@@ -16,8 +16,6 @@ public class SavingsAccount extends BankAccount {
         this.balance = balance;
     }
 
-
-
     public String toString(){
         return super.toString() + " bal " + getBalance();
     }
