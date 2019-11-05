@@ -1,5 +1,5 @@
 public class SavingsAccount extends BankAccount {
-    private double balance;
+    private double balance=0;
 
     public SavingsAccount(String name, int accnum, double balance){
         super(name,accnum);
@@ -16,7 +16,19 @@ public class SavingsAccount extends BankAccount {
         this.balance = balance;
     }
 
+    public void lodge(double amount) {
+
+    }
+
+    public void withdraw(double amount) {
+
+    }
+
+    public double calcTax() {
+        return 0;
+    }
+
     public String toString(){
-        return super.toString() + " bal " + getBalance();
+        return super.toString() + "\nbal: " + getBalance();
     }
 }

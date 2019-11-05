@@ -28,17 +28,17 @@ public abstract class BankAccount implements Transactable, Taxable {
     }
 
     public abstract void lodge(double amount);
-    public abstract void withdrawl(double amount);
+    public abstract void withdraw(double amount);
     public abstract double calcTax();
 
     public String toString() {
-        return "Bank Account" + "\n\nName" + name + "\nAccount Number" + accnum;
+        return "Bank Account" + "\n\nName: " + name + "\nAccount Number: " + accnum;
     }
 
     public double lodge(int amount){
         return amount+=amount;
     }
-    public double withdrawl(int amount){
+    public double withdraw(int amount){
         return amount-=amount;
     }
 }
