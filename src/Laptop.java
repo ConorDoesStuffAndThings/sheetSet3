@@ -32,12 +32,14 @@ public class Laptop extends Computer{
             touchScreen=false;
 
         Laptop laptop = new Laptop(id, make, type, size, touchScreen);
+
         return laptop;
+
 
     }
 
 
     public String toString() {
-        return "\ntouchScreen: " + touchScreen;
+        return super.toString() + "\ntouchScreen: " + touchScreen;
     }
 }

@@ -1,7 +1,11 @@
-public class Memory extends Computer {
+public class Memory  {
     String type;
     int size;
 
+    public Memory(String type, int size) {
+        setType(type);
+        setSize(size);
+    }
 
 
     public String getType() {

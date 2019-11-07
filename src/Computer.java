@@ -1,4 +1,4 @@
-public class Computer implements IDable {
+public class Computer extends Memory implements IDable {
     String id, make;
     Memory memory;
 
@@ -33,6 +33,6 @@ public class Computer implements IDable {
     }
 
     public String toString() {
-        return "\nID:" + id + "\nMake: " + make + "\nMemory: " + memory.toString();
+        return super.toString() + "\nID:" + id + "\nMake: " + make + "\nMemory: " + memory.toString();
     }
 }
